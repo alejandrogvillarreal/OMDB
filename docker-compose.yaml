@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      args:
+        environment: local
+    ports:
+      - "3000:3000"
+    volumes:
+    - ./client:/client
+  # api:
+  #   build:
+  #     context: ./back
+  #     dockerfile: Dockerfile
+  #     args:
+  #       environment: local
+  #   ports:
+  #     - "8000:8000"
+  #   depends_on:
+  #     - mongodb
+  #   volumes:
+  #   - ./back:/api
+  # mongodb:
+  #   image: mongo
+  #   container_name: mongodb
+  #   ports:
+  #     - 27017:27017

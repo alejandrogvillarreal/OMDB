@@ -48,12 +48,6 @@ Este query esta definido en su documentación y tiene varias opciones, por ejemp
 
 ### Organización
 
-#### Módulos
-
-Primero que nada este proyecto se divide en dos partes o módulos, el front y el back. Fíjense que ambas carpetas tienen `package.json` distintos, osea que cada uno corre aparte y por ende van a tener que interactuar vía **HTTP**.
-
-Tenemos ya armadas una guía de carpetas para que se organicen, pueden modificarlas a gusto.
-
 #### Front-End
 
 ```bash.
